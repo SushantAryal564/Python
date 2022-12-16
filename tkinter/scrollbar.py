@@ -1,0 +1,13 @@
+from tkinter import *
+root = Tk()
+scroll_v = Scrollbar(root)
+scroll_h = Scrollbar(root,orient=HORIZONTAL)
+scroll_v.pack(side=RIGHT,fill="y")
+scroll_h.pack(side=BOTTOM,fill="x")
+text=Text(root,height=250,width=300,yscrollcommand=scroll_v.set,xscrollcommand=scroll_h.set,wrap=None)
+text.pack(fill=BOTH,expand=0)
+text.insert(END,"Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming.")
+text.insert(END,"\nNASA \n Google \nNokia \nFacebook \n Netflix \n Expedia \n Reddit \n Quora \n MIT\n Udemy \n Shutterstock \nSpotify\nAmazon\nMozilla\nDropbox")
+scroll_h.config(command=text.xview)
+scroll_v.config(command=text.yview)
+root.mainloop()

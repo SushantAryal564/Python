@@ -1,0 +1,30 @@
+TK Overview
+  Set of widget designed by John K. Ousterhout 1987
+  tk = toolkit
+  We have to import the tkinter toolkit at first.
+  To initialize the tkinter we have to create a Tk root widget,which is a window with a title bar and other decoration provided by the window manager. We can have only one root widget.
+  The first parameter of a label call is the name of the parent window. 
+  The pack method tells the Tk to fit the size of teh window according to the content.
+  Our script will remain in event loop until we close the window.
+
+Labels with images
+  Label can contain image as well.
+
+Message widget
+  The message widget can be used to display short text message.
+  Message widget is similar in functionality to the Label widget, but it is more flexible in displaying text like font can be changed.
+
+Radio Button
+  A radio button is sometimes called option button to choose one or more predefined options. It can contain text or image. Button can display text in only single fonts. A python function can be associated with the radio button when it is clicked. 
+
+CheckBox
+  Also known as tickbox allow the user to make multiple selection from a number of different options. 
+  It have two state: on and off.
+
+Entry widget
+  Entry widget is a basic widget of Tkinter used to get input it allows user to enter a single line of text.
+
+Text widget
+  Text widget is used to write multiline text area which are often used in a forms.
+  It can be used to display linkes, images, and html.
+  
